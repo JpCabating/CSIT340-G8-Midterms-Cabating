@@ -1,5 +1,6 @@
 import Header from "./Header";
 
+
 function Docs({handleRead, handleBookmark, handleReset}) {
   return (
     <div>
@@ -24,6 +25,7 @@ function Docs({handleRead, handleBookmark, handleReset}) {
               Reset
             </button>
           </div>
+          
     </div>
 
   );
