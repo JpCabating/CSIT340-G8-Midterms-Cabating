@@ -1,8 +1,8 @@
 import { useState } from "react";
 import Sidebar from "./components/Sidebar";
 import Docs from "./components/Docs";
-import StatCard from "./components/StatCard";
 import Guide from "./components/Guide";
+
 
 
 function App() {
@@ -32,12 +32,11 @@ function App() {
             handleRead={handleRead}
             handleBookmark={handleBookmark}
             handleReset={handleReset}
-          />
+            read={read}
+            bookmarks={bookmarks}
+            />
         </div>
-        <div className="flex gap-6">
-          <StatCard value={read} label="Marked as read" />
-          <StatCard value={bookmarks} label="Bookmarks" />
-        </div>
+        
       </div>
       <Guide />
     </div>

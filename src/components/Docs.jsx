@@ -1,7 +1,9 @@
 import Header from "./Header";
+import StatCard from "./StatCard";
 
 
-function Docs({handleRead, handleBookmark, handleReset}) {
+
+function Docs({handleRead, handleBookmark, handleReset,read, bookmarks}) {
   return (
     <div>
     <Header />
@@ -24,7 +26,13 @@ function Docs({handleRead, handleBookmark, handleReset}) {
             >
               Reset
             </button>
+
+            <div className="flex gap-6">
+          <StatCard value={read} label="Marked as read" />
+          <StatCard value={bookmarks} label="Bookmarks" />
+        </div>
           </div>
+          
           
     </div>
 

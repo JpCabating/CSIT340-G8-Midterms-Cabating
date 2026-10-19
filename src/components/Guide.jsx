@@ -13,6 +13,12 @@ function Guide() {
           description="Renames the current branch to main."
           command="git branch -M main"
         />
+
+        <Section
+          title="Connect"
+          description="Links this local project to your forked repository on GitHub, under the name origin."
+          command="git remote add origin https://github.com/JpCabating/CSIT340-G8-Midterms-Cabating.git"
+        />
         <Section
           title="Upload"
           description="Sends the main branch to the remote named origin."
