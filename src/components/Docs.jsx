@@ -27,7 +27,7 @@ function Docs({handleRead, handleBookmark, handleReset,read, bookmarks}) {
               Reset
             </button>
 
-            <div className="flex gap-6">
+      <div className="flex gap-6">
           <StatCard value={read} label="Marked as read" />
           <StatCard value={bookmarks} label="Bookmarks" />
         </div>

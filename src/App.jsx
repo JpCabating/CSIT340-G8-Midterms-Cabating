@@ -2,12 +2,14 @@ import { useState } from "react";
 import Sidebar from "./components/Sidebar";
 import Docs from "./components/Docs";
 import Guide from "./components/Guide";
+import Feedback from "./components/Feedback";
 
 
 
 function App() {
   const [read, setRead] = useState(0);
   const [bookmarks, setBookmarks] = useState(0);
+  
 
   function handleRead() {
     setRead(read + 1);
@@ -39,6 +41,7 @@ function App() {
         
       </div>
       <Guide />
+      <Feedback />
     </div>
   );
 }
