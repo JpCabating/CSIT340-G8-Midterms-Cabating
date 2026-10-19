@@ -1,9 +1,24 @@
+import Section from "./Section";
+
 function Guide() {
   return (
-    `<div className="p-12">
-      <h1 className="text-3xl font-bold">Guide</h1>
-      <p className="mt-4 text-lg">Welcome to the Git Quickstart Guide!</p>
-    </div>`
+    <main className="px-20 pt-4">
+        <Section
+          title="Create"
+          description="Creates an empty Git repository in the current folder."
+          command="git init"
+        />
+        <Section
+          title="Rename"
+          description="Renames the current branch to main."
+          command="git branch -M main"
+        />
+        <Section
+          title="Upload"
+          description="Sends the main branch to the remote named origin."
+          command="git push -u origin main"
+        />
+      </main>
   );
 }
 
